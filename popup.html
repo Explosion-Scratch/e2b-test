@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Comment Extension</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="p-3">
+    <h1 class="text-lg font-bold mb-3">Add a Comment</h1>
+    <form id="commentForm" class="mb-3">
+        <textarea id="commentText" class="w-full p-2 border rounded shadow" placeholder="Your comment..."></textarea>
+        <button type="submit" class="mt-2 w-full bg-blue-500 text-white p-2 rounded shadow hover:bg-blue-600">Submit</button>
+    </form>
+    <h2 class="text-lg font-bold mb-3">Your Comments</h2>
+    <ul id="commentList" class="divide-y divide-gray-200"></ul>
+    <script src="popup.js"></script>
+</body>
+</html>

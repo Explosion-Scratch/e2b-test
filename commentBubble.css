@@ -1,0 +1,43 @@
+@import "https://cdn.tailwindcss.com/2.2.19/tailwind.min.css";
+
+#commentBubble {
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+#commentBubble:hover {
+    display: block;
+}
+
+#commentBubble.active {
+    display: block;
+}
+
+#commentBubble p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#commentBubble .replyButton {
+    display: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #3182ce;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#commentBubble.active .replyButton {
+    display: block;
+}
