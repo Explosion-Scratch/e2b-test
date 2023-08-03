@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Sidebar</title>
+    <link rel="stylesheet" href="commentSidebar.css">
+    <script src="commentSidebar.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="commentSidebar" class="hidden">
+        <div class="p-4 shadow-lg rounded-lg bg-white">
+            <h2 class="text-lg font-bold mb-2">Comments</h2>
+            <ul id="commentList" class="space-y-2"></ul>
+            <form id="replyForm" class="mt-4">
+                <label for="replyText" class="sr-only">Reply</label>
+                <textarea id="replyText" class="w-full p-2 border rounded" placeholder="Write a reply..."></textarea>
+                <button type="submit" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Reply</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
